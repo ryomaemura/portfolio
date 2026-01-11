@@ -1,0 +1,19 @@
+.contact-list {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item {
+  width: 50px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+@include responsive {
+  .contact-item {
+    width: 40px;
+    margin: 0 10px;
+  }
+}

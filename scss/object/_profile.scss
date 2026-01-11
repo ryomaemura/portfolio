@@ -1,0 +1,40 @@
+.profile-inner {
+  max-width: 1000px;
+}
+
+.profile-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-image-wrapper {
+  flex: 0 0 220px;
+  margin-right: 40px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  box-shadow: 0 0 25px 0 #d9d9d9;
+  object-fit: cover;
+}
+
+.profile-body {
+  flex: 1;
+}
+
+@include responsive {
+  .profile-item {
+    display: block;
+  }
+
+  .profile-image-wrapper {
+    width: 100px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .profile-body {
+    padding: 0 30px;
+  }
+}

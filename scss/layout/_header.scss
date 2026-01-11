@@ -1,0 +1,74 @@
+// global navi
+.gnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+.gnav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gnav-item {
+  font-size: 1.6rem;
+  padding: 0 24px;
+  letter-spacing: 0.05rem;
+}
+
+.gnav-link {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+  transition: 0.3s;
+  color: #333;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    content: "";
+    transition: 0.3s;
+    transform: translateX(-50%);
+    background-color: #333;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+@include responsive {
+  // global navi
+  .gnav {
+    padding: 15px 0;
+  }
+
+  .gnav-item {
+    font-size: 13px;
+    padding: 2px 15px;
+  }
+
+  .gnav-link {
+    padding: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+}

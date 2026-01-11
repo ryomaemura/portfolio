@@ -1,0 +1,116 @@
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+}
+
+.works-item {
+  flex: 0 0 48%;
+  margin-right: 4%;
+  margin-bottom: 40px;
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+.works-link {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid rgba($color: #000, $alpha: 0.1);
+
+  .caption {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all 0.3s step-end;
+  }
+
+  &:hover .caption {
+    visibility: visible;
+  }
+
+  .caption p {
+    font-size: 3rem;
+    line-height: 250px;
+    color: #fff;
+    opacity: 0;
+  }
+
+  &:hover .caption p {
+    opacity: 1;
+  }
+
+  .mask1,
+  .mask2 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+  }
+
+  .mask1 {
+    left: -50%;
+  }
+
+  &:hover .mask1 {
+    left: 0px;
+  }
+
+  .mask2 {
+    right: -50%;
+  }
+
+  &:hover .mask2 {
+    right: 0px;
+  }
+}
+
+.works-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works-text {
+  font-size: 1.5rem;
+}
+
+@include responsive {
+  .works-title {
+    font-size: 1rem;
+  }
+
+  .works-list {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .works-item {
+    margin-right: 0;
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  .works-link {
+    transition: none;
+
+    &:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+}

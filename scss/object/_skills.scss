@@ -1,0 +1,54 @@
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  flex: 0 0 48%;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid rgba($color: #000, $alpha: 0.4);
+  box-shadow: 0 1px 5px #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 2px 9px rgba($color: #999, $alpha: 1);
+  }
+}
+
+.skill-title {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.skill-description-list {
+  padding-left: 40px;
+}
+
+.skill-description-item {
+  list-style-type: disc;
+}
+
+@include responsive {
+  .skill-list {
+    margin-bottom: 0;
+  }
+
+  .skill-item {
+    margin-bottom: 35px;
+  }
+
+  .skill-title {
+    font-size: 2rem;
+  }
+
+  .skill-description-list {
+    padding-left: 20px;
+  }
+}
