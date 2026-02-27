@@ -7,13 +7,13 @@
 
 .contact-item {
   width: 50px;
-  margin: 0 20px;
+  margin: 0 1.25rem;
   text-align: center;
 }
 
 @media print, screen and (max-width: 767px) {
   .contact-item {
     width: 40px;
-    margin: 0 10px;
+    margin: 0 0.625rem;
   }
 }

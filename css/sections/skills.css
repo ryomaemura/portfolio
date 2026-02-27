@@ -6,8 +6,8 @@
 
 .skill-item {
   flex: 0 0 48%;
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 1.875rem;
+  padding: 1.25rem;
   border: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 5px #ccc;
   cursor: pointer;
@@ -15,20 +15,20 @@
 }
 
 .skill-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-0.25rem);
   box-shadow: 0 2px 9px rgba(153, 153, 153, 1);
 }
 
 .skill-title {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
   border-bottom: 1px solid #000;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .skill-description-list {
-  padding-left: 40px;
+  padding-left: 2.5rem;
 }
 
 .skill-description-item {
@@ -41,14 +41,14 @@
   }
 
   .skill-item {
-    margin-bottom: 35px;
+    margin-bottom: 2.125rem;
   }
 
   .skill-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .skill-description-list {
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
 }

@@ -15,15 +15,15 @@
 }
 
 .gnav-item {
-  font-size: 16px;
-  padding: 0 24px;
-  letter-spacing: 0.5px;
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  letter-spacing: 0.03125rem;
 }
 
 .gnav-link {
   position: relative;
   display: inline-block;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   transition: 0.3s;
   color: #333;
 }
@@ -50,12 +50,12 @@
 
 @media print, screen and (max-width: 767px) {
   .gnav {
-    padding: 15px 0;
+    padding: 1rem 0;
   }
 
   .gnav-item {
-    font-size: 13px;
-    padding: 2px 15px;
+    font-size: 0.8125rem;
+    padding: 0.125rem 1rem;
   }
 
   .gnav-link {

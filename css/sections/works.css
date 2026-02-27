@@ -1,13 +1,13 @@
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -40px;
+  margin-bottom: -2.5rem;
 }
 
 .works-item {
   flex: 0 0 48%;
   margin-right: 4%;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .works-item:nth-of-type(2n) {
@@ -17,7 +17,7 @@
 .works-link {
   display: block;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   width: 100%;
   height: 250px;
   overflow: hidden;
@@ -40,7 +40,7 @@
 }
 
 .works-link .caption p {
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 250px;
   color: #fff;
   opacity: 0;
@@ -83,12 +83,12 @@
 }
 
 .works-text {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 @media print, screen and (max-width: 767px) {
   .works-title {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .works-list {
@@ -98,11 +98,11 @@
 
   .works-item {
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
   .works-item:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .works-link {

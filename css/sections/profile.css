@@ -10,7 +10,7 @@
 
 .profile-image-wrapper {
   flex: 0 0 220px;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 .profile-image {
@@ -31,10 +31,10 @@
   .profile-image-wrapper {
     width: 100px;
     max-width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 1.25rem;
   }
 
   .profile-body {
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 }
