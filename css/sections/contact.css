@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-@include responsive {
+@media print, screen and (max-width: 767px) {
   .contact-item {
     width: 40px;
     margin: 0 10px;

@@ -23,7 +23,7 @@
   flex: 1;
 }
 
-@include responsive {
+@media print, screen and (max-width: 767px) {
   .profile-item {
     display: block;
   }

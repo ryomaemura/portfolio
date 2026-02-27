@@ -1,19 +1,16 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
-
-  &:before,
-  &:after {
-    box-sizing: border-box;
-  }
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
   font-family: "Noto Serif JP", serif;
-  font-size: 1.5rem;
+  font-size: 15px;
   line-height: 1.8;
   letter-spacing: 0.8px;
   word-break: break-all;
@@ -45,14 +42,13 @@ li {
   display: none;
 }
 
-// letter
 .section-heading {
   margin-bottom: 20px;
   text-align: center;
 }
 
 .heading-primary {
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 15px;
@@ -64,17 +60,16 @@ li {
   text-align: center;
 }
 
-// layout
 .wrapper {
   padding-top: 68px;
 }
 
 .section {
   padding: 120px 0;
+}
 
-  &:nth-of-type(2n) {
-    background-color: #f7f7f7;
-  }
+.section:nth-of-type(2n) {
+  background-color: #f7f7f7;
 }
 
 .inner {
@@ -83,17 +78,14 @@ li {
   padding: 0 40px;
 }
 
-// ios
-.ios .gnav-link {
-  &:after,
-  &:hover:after {
-    display: none;
-  }
+.ios .gnav-link:after,
+.ios .gnav-link:hover:after {
+  display: none;
 }
 
-@include responsive {
+@media print, screen and (max-width: 767px) {
   body {
-    font-size: 1.3rem;
+    font-size: 13px;
     line-height: 1.7;
   }
 
@@ -105,25 +97,23 @@ li {
     display: block;
   }
 
-  // letter
   .section-heading {
     margin-bottom: 20px;
   }
 
   .heading-primary {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
 
-  // layout
   .wrapper {
     padding-top: 56px;
   }
 
   .section {
     padding: 60px 0;
+  }
 
-    .inner {
-      padding: 0 15px;
-    }
+  .section .inner {
+    padding: 0 15px;
   }
 }

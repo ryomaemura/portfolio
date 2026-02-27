@@ -1,9 +1,9 @@
 .footer {
   background-color: #1d1d1d;
+}
 
-  .inner {
-    padding: 30px;
-  }
+.footer .inner {
+  padding: 30px;
 }
 
 .copyright {
@@ -22,10 +22,8 @@
   background-color: #ccc;
 }
 
-@include responsive {
-  .footer {
-    .inner {
-      padding: 20px 0;
-    }
+@media print, screen and (max-width: 767px) {
+  .footer .inner {
+    padding: 20px 0;
   }
 }
