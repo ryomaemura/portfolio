@@ -45,3 +45,9 @@
   font-size: 14px;
   margin-top: 4px;
 }
+
+@media print, screen and (max-width: 767px) {
+  .certificate-list {
+    grid-template-columns: 1fr;
+  }
+}
