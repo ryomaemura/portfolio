@@ -1,0 +1,208 @@
+.experience-inner {
+  max-width: 1200px;
+}
+
+.experience-summary {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.experience-stat {
+  flex: 0 0 220px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.experience-stat-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.experience-stat-unit {
+  font-size: 1rem;
+  margin-left: 0.25rem;
+}
+
+.experience-stat-label {
+  display: block;
+  color: #999;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.project-table th,
+.project-table td {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+.project-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.project-table th {
+  white-space: nowrap;
+  background-color: #555;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-col-period {
+  width: 180px;
+}
+
+.project-col-client {
+  width: 160px;
+}
+
+.project-col-role {
+  width: 150px;
+}
+
+.project-col-scale {
+  width: 100px;
+}
+
+.project-col-tech {
+  width: 210px;
+}
+
+.project-period {
+  white-space: nowrap;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.project-scale {
+  white-space: nowrap;
+}
+
+.project-client {
+  font-weight: bold;
+}
+
+.project-role-badge {
+  display: inline-block;
+  min-width: 2.75rem;
+  border-radius: 4px;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+}
+
+.project-phase-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.project-phase-item {
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  color: #555;
+  background-color: #fff;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  padding: 0;
+  margin: 0;
+}
+
+.project-tech-item {
+  background-color: #fff8d9;
+  border-radius: 4px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.8125rem;
+}
+
+.experience-note {
+  color: #999;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+@media print, screen and (max-width: 767px) {
+  .experience-summary {
+    gap: 0.625rem;
+  }
+
+  .experience-stat {
+    flex: 1 1 0;
+  }
+
+  .experience-stat-value {
+    font-size: 1.875rem;
+  }
+
+  .project-table,
+  .project-table tbody,
+  .project-table tr,
+  .project-table td {
+    display: block;
+  }
+
+  .project-table {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .project-table thead {
+    display: none;
+  }
+
+  .project-table tr {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-table td {
+    border-bottom: none;
+    padding: 0.25rem 0;
+  }
+
+  .project-table td::before {
+    content: attr(data-label);
+    display: block;
+    color: #999;
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+
+  .project-table .project-period::before {
+    display: none;
+  }
+}
